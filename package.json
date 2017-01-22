@@ -1,7 +1,7 @@
 {
   "name": "friend_finder_app",
   "version": "1.0.0",
-  "description": "The Friend Finder app is a compatibility-based dating app that takes a user's input and matches it to another user in our database based on their responses.",
+  "description": "The Friend Finder app is a compatibility-based friend app that takes a user's input and matches it to another user in our database based on their responses.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,12 +17,12 @@
   "author": "Saleema Ali",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sali1390/friendFinder/issues",
+    "url": "https://github.com/sali1390/friendFinder/issues"
+  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "path": "^0.12.7"
-  }
   },
   "homepage": "https://github.com/sali1390/friendFinder#readme"
 }
