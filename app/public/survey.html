@@ -39,7 +39,7 @@
 	 	<select data-placeholder="" class="chosen-select" id="q1">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
+            <option value="2" selected>2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
@@ -51,7 +51,7 @@
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
-            <option value="3">3</option>
+            <option value="3" selected>3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
       	</select>
@@ -64,7 +64,7 @@
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
-            <option value="4">4</option>
+            <option value="4" selected>4</option>
             <option value="5">5 (Strongly Agree)</option>
       	</select>
 
@@ -73,7 +73,7 @@
 		<h4>You rarely do something just out of sheer curiosity.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q4">
 	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
+            <option value="1" selected>1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -89,7 +89,7 @@
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+            <option value="5" selected>5 (Strongly Agree)</option>
       	</select>
 
 
@@ -101,7 +101,7 @@
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+            <option value="5" selected>5 (Strongly Agree)</option>
       	</select>
 
 
@@ -110,7 +110,7 @@
 	 	<select data-placeholder="" class="chosen-select" id="q7">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
+            <option value="2" selected>2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
@@ -120,7 +120,7 @@
 		<h4>You rarely get carried away by fantasies and ideas.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q8">
 	 		<option value=""></option>
-            <option value="1">1 (Strongly Disagree)</option>
+            <option value="1" selected>1 (Strongly Disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -135,7 +135,7 @@
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
+            <option value="5" selected>5 (Strongly Agree)</option>
       	</select>
 
 		<h3><strong>Question 10</strong></h3>
@@ -143,7 +143,7 @@
 	 	<select data-placeholder="" class="chosen-select" id="q10">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
+            <option value="2" selected>2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
@@ -195,19 +195,21 @@
             scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
         };
             
-        console.log(userData);    
+//        console.log(userData); 
+        
         // Grab the URL of the website
         var currentURL = window.location.origin;
 
         // AJAX post the data to the friends API. 
-        $.post(currentURL + "/api/friends", userData, function(data){
+        $.post("/api/friends", userData, function(data){
 
-            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-            $("#matchName").text(data.name);
-            $('#matchImg').attr("src", data.photo);
-
-            // Show the modal with the best match 
-            $("#resultsModal").modal('toggle');
+            console.log(data); 
+//            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+//            $("#matchName").text(data.name);
+//            $('#matchImg').attr("src", data.photo);
+//
+//            // Show the modal with the best match 
+//            $("#resultsModal").modal('toggle');
 
         });
     });
