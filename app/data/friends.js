@@ -1,7 +1,7 @@
 var friendsArray = [
     {
       "name":"Barack",
-      "photo":"https://lh6.googleusercontent.com/-2lJYGtfXKwQ/AAAAAAAAAAI/AAAAAAAB2HQ/QSmIw0nQN_c/photo.jpg",
+      "photo":"https://pbs.twimg.com/profile_images/734766166233649152/LQtyLdmS.jpg",
       "scores":[
          5,
          3,
@@ -17,7 +17,7 @@ var friendsArray = [
     },
     {
       "name":"Hillary",
-      "photo":"http://www.goodnet.org/photos/620x0/26449_hd.jpg",
+      "photo":"https://news.artnet.com/app/news-upload/2016/08/Hillary_Clinton_by_Gage_Skidmore_4-256x256.jpg",
       "scores":[
          4,
          2,
@@ -33,7 +33,7 @@ var friendsArray = [
     },
     {
       "name":"Bernie",
-      "photo":"http://i2.cdn.cnn.com/cnnnext/dam/assets/120315023652-biden-file-story-top.jpg",
+      "photo":"https://pbs.twimg.com/profile_images/600415239721488384/nbbxSaOH.jpg",
       "scores":[
          4,
          2,
@@ -49,7 +49,7 @@ var friendsArray = [
     },
     {
       "name":"Michelle",
-      "photo":"https://s-media-cache-ak0.pinimg.com/originals/69/52/0a/69520a5f2f7fc8e69064541fda9db91e.jpg",
+      "photo":"http://jonesmagazine.com/wp-content/uploads/mobama13.jpg",
       "scores":[
          5,
          5,
@@ -65,7 +65,7 @@ var friendsArray = [
     },
     {
       "name":"Donald",
-      "photo":"http://az616578.vo.msecnd.net/files/2016/07/23/6360489455192162291563850737_Trump.jpg",
+      "photo":"https://pbs.twimg.com/profile_images/606363640229326848/MS8-bz8r.jpg",
       "scores":[
          1,
          1,
