@@ -4,47 +4,47 @@ var friendsArray = [
       "photo":"https://lh6.googleusercontent.com/-2lJYGtfXKwQ/AAAAAAAAAAI/AAAAAAAB2HQ/QSmIw0nQN_c/photo.jpg",
       "scores":[
          5,
+         3,
          1,
-         4,
-         4,
+         3,
          5,
+         4,
+         4,
          1,
          2,
-         5,
-         4,
-         1
+         5
        ]
     },
     {
       "name":"Hillary",
       "photo":"http://www.goodnet.org/photos/620x0/26449_hd.jpg",
       "scores":[
-         5,
+         4,
+         2,
          1,
-         4,
-         4,
          5,
+         3,
+         3,
+         3,
          1,
          2,
-         5,
-         4,
-         1
+         5
        ]
     },
     {
-      "name":"Joe",
+      "name":"Bernie",
       "photo":"http://i2.cdn.cnn.com/cnnnext/dam/assets/120315023652-biden-file-story-top.jpg",
       "scores":[
-         5,
-         1,
          4,
-         4,
-         5,
+         2,
          1,
          2,
-         5,
          4,
-         1
+         5,
+         5,
+         1,
+         5,
+         5
        ]
     },
     {
@@ -52,30 +52,30 @@ var friendsArray = [
       "photo":"https://s-media-cache-ak0.pinimg.com/originals/69/52/0a/69520a5f2f7fc8e69064541fda9db91e.jpg",
       "scores":[
          5,
-         1,
-         4,
-         4,
          5,
+         1,
+         3,
+         4,
+         4,
+         4,
          1,
          2,
-         5,
-         4,
-         1
+         5
        ]
     },
     {
       "name":"Donald",
       "photo":"http://az616578.vo.msecnd.net/files/2016/07/23/6360489455192162291563850737_Trump.jpg",
       "scores":[
+         1,
+         1,
          5,
          1,
-         4,
-         4,
-         5,
+         3,
          1,
          2,
          5,
-         4,
+         1,
          1
        ]
     },
