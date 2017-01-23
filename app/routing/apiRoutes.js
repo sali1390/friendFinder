@@ -6,24 +6,23 @@ module.exports = function(app){
         res.json(friendsData);
     })
     
-    function compareUsers(scores){
+    function compareUsers(req, res){
         for (var i=0; i<friendsData.length; i++){
             var scoreDifference=0;
             for (var p=0; p<friendsData[i].scores.length; p++){
-                scoreDifference += Math.abs(friendsData[i].scores[p] - parseInt(scores[p]));
+                scoreDifference += Math.abs(friendsData[i].scores[p] - parseInt(req[p]));     
             }
-            console.log(scoreDifference);
-            if (scoreDifference <= 10){
-                return friendsData[i];
-            }     
+            if (scoreDifference < 15){
+                return(friendsData[i]);
+            }
         }
     }
     
     app.post('/api/friends', function(req, res){
         var scores = (req.body.scores);
         
-        compareUsers(scores);
-        
         friendsData.push(req.body);
+        
+        res.json(compareUsers(scores));
     })
 }
