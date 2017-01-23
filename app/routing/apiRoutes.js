@@ -21,8 +21,8 @@ module.exports = function(app){
     app.post('/api/friends', function(req, res){
         var scores = (req.body.scores);
         
-        friendsData.push(req.body);
-        
         res.json(compareUsers(scores));
+        
+        friendsData.push(req.body);
     })
 }
